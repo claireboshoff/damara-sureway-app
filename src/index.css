@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-damara-50: #E8F5E9;
+  --color-damara-100: #C8E6C9;
+  --color-damara-200: #A5D6A7;
+  --color-damara-300: #81C784;
+  --color-damara-400: #66BB6A;
+  --color-damara-500: #1B5E20;
+  --color-damara-600: #155A17;
+  --color-damara-700: #0F4C0F;
+  --color-damara-800: #0A3A0A;
+  --color-damara-900: #052705;
+
+  --color-gold-50: #FFFDE7;
+  --color-gold-100: #FFF9C4;
+  --color-gold-200: #FFF59D;
+  --color-gold-300: #FFF176;
+  --color-gold-400: #FFD54F;
+  --color-gold-500: #FFC107;
+  --color-gold-600: #FFB300;
+  --color-gold-700: #FF8F00;
+
+  --color-earth-50: #EFEBE9;
+  --color-earth-100: #D7CCC8;
+  --color-earth-200: #BCAAA4;
+  --color-earth-300: #A1887F;
+  --color-earth-400: #8D6E63;
+  --color-earth-500: #5D4037;
+
+  --color-surface-light: #FAFAFA;
+  --color-surface-dark: #0F1419;
+  --color-card-light: #FFFFFF;
+  --color-card-dark: #1A2332;
+  --color-border-light: #E0E0E0;
+  --color-border-dark: #2D3748;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #888; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #666; }
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
